@@ -1,0 +1,30 @@
+<?php
+
+$score_number = 85;
+
+// Determine letter grade
+if ($score_number >= 90 && $score_number <= 100) {
+    $letter_grade = "A";
+} elseif ($score_number >= 80) {
+    $letter_grade = "B";
+} elseif ($score_number >= 70) {
+    $letter_grade = "C";
+} elseif ($score_number >= 60) {
+    $letter_grade = "D";
+} else {
+    $letter_grade = "F";
+}
+
+// Determine Pass/Fail
+if ($score_number >= 74.5) {
+    $remarks = "Passed";
+} else {
+    $remarks = "Failed";
+}
+
+// Output
+echo "Score: " . $score_number . "\n";
+echo "Letter Grade: " . $letter_grade . "\n";
+echo "Remarks: " . $remarks;
+
+?>
